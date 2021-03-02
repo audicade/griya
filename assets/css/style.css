@@ -1,0 +1,478 @@
+/* -- == DASHBOARD == -- */
+/* Navbar */
+.navbar{
+	position: relative;
+	z-index: 1;
+}
+.navbar-brand{
+	font-family: Poppins;
+	font-size: 28px;
+	margin-right: 5px;
+
+}
+.navbar-brand, .nav-link{
+		color: white ! important;
+
+}
+
+
+
+/*jumbotron*/
+.jumbotron	{
+	background-image: url(../img/banner1.jpg);
+	background-size: cover;
+	height: 300px;
+	position: relative;
+}	
+.jumbotron .container{
+	position: relative;
+	z-index: 1;
+}
+
+.jumbotron::after{
+	content: '';
+	display: block;
+	width: 100%;
+	height: 100%;
+	background-image: linear-gradient(to top,rgba(0,0,0,0.5), rgba(0,0,0,0));
+	position: absolute;
+	bottom: 0;  
+
+}
+
+.jumbotron .display-4{
+	color: white;
+	text-align: center;
+	margin-top: 230px;
+	font-weight: 500;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.7);
+	font-size: 20px;
+
+}
+
+/*form pencarian*/
+.form-pencarian{
+	box-shadow: 0 3px 28px rgba(0,0,0,0.5);
+	border-radius: 12px;
+	background-color: white;
+	margin-top: -150px;
+	padding: 30px;
+	margin-bottom: 50px;
+}
+#form-kategori-pencarian{
+	text-align: center;
+}
+
+.section-title h2 {
+	margin-bottom: 10px;
+	position: relative;
+	text-transform: uppercase;
+	margin-top: 40px;
+}
+
+.section-title .title-line {
+	color: #ffd000;
+	position: relative;
+}
+
+.section-title .title-line::after {
+	background-color: #333;
+	content: "";
+	height: 2px;
+	left: -60px;
+	position: absolute;
+	top: 10px;
+	width: 50px;
+}
+
+.section-title .title-line::before {
+	background-color: #333;
+	content: "";
+	height: 2px;
+	position: absolute;
+	right: -60px;
+	top: 10px;
+	width: 50px;
+}
+
+
+.artikel{
+	margin-bottom: 50px;
+	margin-top: 20px;
+}
+
+/*artikel end*/
+
+.how-it-works .step {
+  width: 20%;
+  display: inline-block;
+  text-align: center;
+  position: relative; }
+  .how-it-works .step:after {
+    width: 100%;
+    height: 4px;
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 25px;
+    background: #ffd000; }
+  .how-it-works .step:last-child:after {
+    display: none; }
+  .how-it-works .step .number {
+    z-index: 1;
+    width: 50px;
+    height: 50px;
+    border: 4px solid #ffd000;
+    background: #fff;
+    border-radius: 50%;
+    color: #007bff;
+    display: block;
+    position: relative;
+    margin: 0 auto 10px auto; }
+    .how-it-works .step .number > span {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      font-size: 1.3rem;
+      color: #ffd000; }
+  .how-it-works .step .caption {
+    display: block; }
+
+/*== Footer Area CSS Start ==*/
+
+#footer-area a {
+	color: #ffd000;
+}
+
+.footer-widget-area {
+	background-color: #1e2228;
+	padding: 60px 0;
+}
+
+.footer-widget-area h2,
+.footer-widget-area {
+	color: #fff;
+}
+
+.singlefooter-widget h2 {
+	border-bottom: 1px dashed #ffd000;
+	display: inline-block;
+	font-size: 25px;
+	font-weight: 600;
+	margin-bottom: 30px;
+	padding-bottom: 15px;
+	position: relative;
+	text-transform: uppercase;
+}
+
+.single-footer-widget h2 {
+	font-size: 22px;
+	font-weight: 600;
+	margin-bottom: 30px;
+	text-transform: uppercase;
+}
+
+.single-footer-widget p {
+	font-size: 13px;
+	line-height: 2;
+}
+
+.single-footer-widget img {
+	margin-bottom: 20px;
+}
+
+.widget-pintasan .pintasan{
+	margin-bottom: 10px;
+}
+
+.get-touch {
+	color: #ffd000;
+	font-size: 15px;
+	font-weight: 600;
+	line-height: 2.5;
+	margin-top: 20px;
+}
+
+.get-touch i .fa {
+	margin-right: 5px;
+}
+
+.footer-bottom-area {
+	background-color: #000;
+	color: #eaeaea;
+	padding: 15px 0;
+}
+
+
+/*== Footer Area CSS End ==*/
+
+
+
+
+/*utility*/
+.tombol{
+	text-transform: uppercase;
+	/*border-radius: 10px;*/
+}
+
+.tombol-pencarian{
+	text-transform: uppercase;
+	border-radius: 10px;
+	margin-top: 50px;
+	margin-left: 30px;
+	padding: 15px 25px;
+	font-size: 20px;
+}
+
+/* DEKSTOP VERSI*/
+
+@media (min-width: 992px) { 
+	 .nav-link{
+		text-transform: uppercase;
+		margin-right: 25px;
+		font-weight: 400;
+	}
+
+	
+	.nav-link:hover::after{
+		content: '';
+		display: block;  
+		border-bottom: 3px solid #ffd000;
+		width: 50%;
+		margin:auto;
+		padding-bottom: 5px;
+		margin-bottom: -8px;
+	}
+
+	.jumbotron{
+		margin-top: -70px;
+		height: 600px;
+	}
+
+	.jumbotron .display-4{
+	font-size: 62px;
+}
+
+
+
+}
+
+/* -- == Filter List Kendaraan == -- */
+.filter-kendaraan{
+	margin-bottom: 220px;
+	position: relative;
+}
+
+.list-kendaraan{
+	position: absolute;
+}
+
+#gambarKendaraan{
+	position: relative;
+    width: 200px;
+    height: 150px;
+}
+
+.box-shadow{
+	position: relative;
+    box-shadow: 0 3px 28px rgba(0,0,0,0.5);
+	border-radius: 12px;
+	background-color: white;
+}
+
+.rating{
+    font-size: 20px;
+    color: #ffd000;
+}
+
+.container{
+	position: relative;
+}
+
+.icon-map{
+    color: #ff1e00;
+}
+
+
+/* -- == Detail Kendaraan == -- */
+
+.panduan-detail-kendaraan{
+	background-color: #1e2228;
+}
+
+.panduan-a{
+	position: absolute;
+	right: 340px;
+}
+
+.panduan-b{
+	position: absolute;
+	right: 130px;
+}
+
+.panduan-c{
+	position: absolute;
+	right: 0px;
+}
+
+.map{
+	height:	300px;
+	border: 2px;
+	margin-top: 30px;
+	margin-right: 20px;
+	position: relative;
+}
+
+.filter-pencarian{
+	margin-bottom: 220px;
+}
+
+
+/* -- == Pembayaran Pesanan == -- */
+#card-kendaraan{
+	box-shadow:0 0 30px rgba(0,0,0,0.5);
+	border-radius: 12px;
+	background-color: white;
+	margin-bottom: 40px;
+}
+
+#rincian-biaya{
+	box-shadow:0px 7px 20px 0 rgba(0,0,0,0.5);
+	border-radius: 12px;
+	background-color: white;
+}
+
+
+/* -- == Konfirmasi Pemesanan == -- */
+#halaman-konfirmasi{
+	position: relative;
+	margin-top: 30px;
+	margin-bottom: 750px;
+}
+
+#title-konfirmasi-pemesanan{
+	position: relative;
+	text-transform: uppercase;
+	text-align: center;
+	font-weight: bold;
+}
+
+#row-konfirmasi-utama{
+	position: relative;
+	justify-content: center;
+}
+
+#col-left{
+	position: absolute;
+	margin-right: 40px;
+	background-color: white;
+	margin-top: 50px;
+	margin-bottom: 250px;
+	margin-left: -800px;
+}
+
+#nama-penyewa{
+	position: relative;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+#col-kode-konfirmasi{
+	position: relative;
+	background-color: white;
+	margin-top: 50px;
+}
+
+#detail-kendaraan{
+	position: relative;
+	margin-top: 30px;
+}
+
+#tarif-layanan{
+	position: relative;
+	margin-top: 30px;
+}
+
+#col-right{
+	position: absolute;
+	margin-left: 40px;
+	margin-right: -300px;
+}
+
+#col-lokasi-penjemputan{
+	position: relative;
+	margin-top: 40px;
+}
+
+#button-tampilkan-pesanan{
+	position: relative;
+	margin-top: 50px;
+}
+
+/* konfirmasi booking */
+.tambahan p{
+	font-weight: 200px;
+	color: #fd7e14;
+	font-size: 16px;
+}
+
+.card-shadow{
+	box-shadow: 0 3px 7px rgba(0,0,0,0.7);
+	border-radius: 6px;
+	background-color: white;
+}
+
+.yellow-divider{
+	margin-top: 5px;
+	margin-bottom: 5px;
+	height: 8px;
+	width: 100%;
+	border-top: 1px solid #fd7e14;
+}
+
+.h-divider{
+	margin-top: 5px;
+	margin-bottom: 5px;
+	height: 1px;
+	width: 100%;
+	border-top: 1px solid #d7e1ea;
+}
+
+.v-divider{
+	width: 1px;
+	height: 200px;
+	border-left: 1px solid #d7e1ea;
+}
+
+/* -- == panduan detail rental == -- */
+.panduan-detail-rental{
+	position: relative;
+	background-color: #1e2228;
+}
+/* -- == end panduan detail rental == -- */
+
+
+/* -- == profil rental == -- */
+.image-rental{
+	position: relative;
+	border-radius: 2px #000;
+	width: 300px;
+	height: 200px;
+}
+/* -- == end profil rental == -- */
+
+
+/* -- == form input kendaraan == -- */
+#input-fitur-kendaraan{
+	background-color: white;
+	width: 350px;
+	margin-top: 50px;
+}
+
+#input-detail-kendaraan{
+	margin-bottom: 270px;
+}
+/* -- == end form input kendaraan == -- */
